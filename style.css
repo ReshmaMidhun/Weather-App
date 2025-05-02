@@ -21,7 +21,6 @@ body {
     text-align: center;
     width: 100%;
     max-width: 400px;
-    height: auto;
     min-height: 500px;
 }
 
@@ -53,7 +52,7 @@ button:hover {
 }
 
 #weather-data {
-    margin: 20px auto 0;
+    margin: 40px auto 0;
     width: 100%;
     max-width: 300px;
     padding: 25px;
@@ -62,3 +61,5 @@ button:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
+
+  
