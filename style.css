@@ -62,10 +62,3 @@ button:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
-@media (max-width: 500px) {
-    #weatherApp {
-      padding: 20px;
-      min-height: 300px;
-    }
-  }
-  
