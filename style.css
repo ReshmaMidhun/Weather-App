@@ -15,12 +15,14 @@ body {
 
 #weatherApp {
     background: white;
-    padding: 30px;
+    padding: 40px;
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%;
     max-width: 400px;
+    height: auto;
+    min-height: 500px;
 }
 
 #location-input {
@@ -60,3 +62,10 @@ button:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
+@media (max-width: 500px) {
+    #weatherApp {
+      padding: 20px;
+      min-height: 300px;
+    }
+  }
+  
