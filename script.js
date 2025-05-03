@@ -2,7 +2,7 @@
 document.getElementById("get-weather-btn").addEventListener('click', async () => {
 
     //get the user entered location
-    const location = document.getElementById("location-input").value;
+    const location = document.getElementById("location-input").value.trim();
 
     //fetch the weather data
     const weatherData = await getweatherData(location);
@@ -49,7 +49,8 @@ const displayWeatherData = (data) => {
 
     // Handle API error response (e.g., invalid location)
     if (data.cod !== 200) {
-        weatherDataElement.innerHTML = `Error: ${data.message}`;
+        weatherDataElement.innerHTML = `Location not found. Please check the spelling or try a nearby city`;
+
         weatherDataElement.style.backgroundColor = 'lightgray';
         return;
     }
